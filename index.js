@@ -25,5 +25,4 @@ else if (answer.operator === "Division") {
 else {
     console.log("Please select Valid Operator");
 }
-
-console.log("THE END")
+console.log("THE END");
