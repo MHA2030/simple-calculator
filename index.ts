@@ -9,20 +9,20 @@ const answer = await inquirer.prompt([
     message: "Select an operator",
     type: "list",
     name: "operator",
-    choice: ["Addition", "Subraction", "Multiplication", "Division"],
+    choices: ["Addition", "Subraction", "Multiplication", "Division"],
   },
 ]);
 
 if (answer.operator === "Addition") {
-  console.log(answer.firstNumber + answer.SecondNumber);
+  console.log(answer.firstNumber + answer.secondNumber);
 } else if (answer.operator === "Subraction") {
-  console.log(answer.firstNumber - answer.SecondNumber);
+  console.log(answer.firstNumber - answer.secondNumber);
 } else if (answer.operator === "Multiplication") {
-  console.log(answer.firstNumber * answer.SecondNumber);
+  console.log(answer.firstNumber * answer.secondNumber);
 } else if (answer.operator === "Division") {
-  console.log(answer.firstNumber / answer.SecondNumber);
+  console.log(answer.firstNumber / answer.secondNumber);
 } else {
   console.log("Please select Valid Operator");
 }
 
-console.log("THE END")
+console.log("THE END");
